@@ -5,7 +5,8 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     -- My favourite color schemes
-    use { 'LunarVim/onedarker.nvim', config = vim.cmd[[colorscheme onedarker]]}
+    use { 'LunarVim/onedarker.nvim' }
+    use { 'sainnhe/gruvbox-material', config = vim.cmd[[colorscheme gruvbox-material]] }
 
     use { 'nvim-treesitter/nvim-treesitter', config = require('treesitter-config') }
     use { 'p00f/nvim-ts-rainbow', requires = { 'nvim-treesitter/nvim-treesitter' } } 

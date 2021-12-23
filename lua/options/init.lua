@@ -9,7 +9,7 @@ vim.opt.relativenumber = true
 vim.opt.signcolumn = 'yes'
 
 -- Termguicolors might be needed for certain plugins
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 -- I don't swap files in my system, which are backup files created by neovim
 vim.opt.backup = false
