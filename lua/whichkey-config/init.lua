@@ -13,7 +13,8 @@ local leader_mappings = {
         r = {":Telescope live_grep<cr>", "Live grep"},
         b = {":Telescope buffers<cr>", "Buffers"},
         o = {":Telescope oldfiles<cr>", "Recent files"}
-    }
+    },
+
 }
 
 local opts = { prefix = '<leader>' }
@@ -28,3 +29,14 @@ local comment_mappings = {
 
 wk.register(comment_mappings, { mode = "n", prefix = "", preset = true })
 wk.register(comment_mappings, { mode = "v", prefix = "", preset = true })
+
+local lsp_mappings = {
+    gr = {":Lspsaga rename<cr>", "Lsp: Symbol rename"},
+    gx = {":Lspsaga code_action<cr>", "Lsp: Code action"},
+    K = {":Lspsaga hover_doc<cr>", "Lsp: Hover keyword"},
+    go = {":Lspsaga show_line_diagnostics<cr>", "Lsp: Line diagnostic"},
+    gj = {":Lspsaga diagnostic_jump_next<cr>", "Lsp: Jump to next diagnostic"},
+    gk = {":Lspsaga diagnostic_jump_prev<cr>", "Lsp: Jump to previous diagnostic"},
+}
+
+wk.register(lsp_mappings, { mode = "n", prefix = "", preset = true })

@@ -15,6 +15,8 @@ require('keymaps')
 
 -- set fillchars+=vert:\ 
 -- ]]
+
+-- This enables full transparency for neovim
 vim.cmd [[
 hi Normal guibg=none ctermbg=none
 hi LineNr guibg=none ctermbg=none

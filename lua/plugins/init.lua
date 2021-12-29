@@ -17,12 +17,15 @@ return require('packer').startup(function()
     use { 'akinsho/bufferline.nvim', requires = { 'kyazdani42/nvim-web-devicons' }, config = require('bufferline-config') }
     use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }, config = require('nvim-tree-config') }
     use { 'neovim/nvim-lspconfig', config = require('lsp') }
+    use { '' }
     use { 'hrsh7th/nvim-cmp' }
     use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/vim-vsnip' }
     use { 'hrsh7th/cmp-vsnip' }
     use { 'onsails/lspkind-nvim' }
+    use { 'tami5/lspsaga.nvim', branch = 'nvim6.0' }
+
     use { 'norcalli/nvim-colorizer.lua', config = require('colorizer').setup() }
     use { 'glepnir/dashboard-nvim', config = require('dashboard-config') }
     use { 'lukas-reineke/indent-blankline.nvim', config = require('blankline-config') }
