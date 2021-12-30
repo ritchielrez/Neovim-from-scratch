@@ -43,6 +43,6 @@ vim.g.dashboard_custom_section = {
     a = {description = {'  Find File          '}, command = 'Telescope find_files'},
     d = {description = {'  Search Text        '}, command = 'Telescope live_grep'},
     b = {description = {'  Recent Files       '}, command = 'Telescope oldfiles'},
-    e = {description = {'  Config             '}, command = 'edit ~/.config/nvim/init.lua'},
+    e = {description = {'  Config             '}, command = 'edit ~/Appdata/Local/nvim/init.lua'},
 }
 vim.g.dashboard_custom_footer = {'We fear the future because we are wasting today. - Mother Teresa'}
