@@ -31,14 +31,5 @@ require'nvim-tree'.setup {
     auto_open = 1,
     auto_close = 1,
     gitignore = 1,
-    diagnostics = {
-        enable = true,
-        icons = {
-            hint = "",
-            info = "",
-            warning = "",
-            error = "",
-        }
-    },
 }
 
