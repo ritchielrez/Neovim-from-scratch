@@ -26,13 +26,7 @@ return require('packer').startup(function()
     use { 'onsails/lspkind-nvim' }
     use { 'tami5/lspsaga.nvim', branch = 'nvim6.0' }
     -- use { 'jose-elias-alvarez/null-ls.nvim' }
-    use {
-        "jose-elias-alvarez/null-ls.nvim",
-        config = function()
-            require("null-ls").setup()
-        end,
-        requires = { "nvim-lua/plenary.nvim" },
-    }
+    use { 'jose-elias-alvarez/null-ls.nvim', requires = { 'nvim-lua/plenary.nvim' }, config = require('null-ls-config') }
 
     use { 'norcalli/nvim-colorizer.lua', config = require('colorizer').setup() }
     use { 'glepnir/dashboard-nvim', config = require('dashboard-config') }
