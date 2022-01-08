@@ -53,4 +53,5 @@ vim.g.loaded_tarPlugin = 1
 -- Change the default shell
 -- vim.o.shell = 'pwsh'
 
-vim.opt.shortmess:append("c")
+-- Setting file formatting correctly so I don't see ^M anymore
+vim.cmd[[set ffs=unix,dos]]
