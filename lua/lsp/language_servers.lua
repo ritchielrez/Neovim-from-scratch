@@ -20,7 +20,9 @@ local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
-local langservers = { 'sumneko_lua', 'clangd', 'pyright' }
+local omnisharp_bin = "C:\\Users\\ritch\\Documents\\Omnisharp\\OmniSharp.exe"
+
+local langservers = { 'sumneko_lua', 'clangd', 'pyright', 'omnisharp' }
 
 for _, server in ipairs(langservers) do
 
@@ -56,6 +58,16 @@ for _, server in ipairs(langservers) do
         require'lspconfig'[server].setup {
             capabilities = capabilities,
             --cmd = { "clangd", "-target=x86_64-pc-windows-gnu"}
+        }
+
+    -- For C# omnisharp lsp
+    elseif server == 'omnisharp' then 
+        require'lspconfig'[server].setup {
+            capabilities = capabilities,
+            on_attach = function(_, bufnr)
+                vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+            end,
+            cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) },
         }
 
     -- Otherwise if it's some other servers
