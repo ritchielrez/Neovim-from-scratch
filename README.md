@@ -20,4 +20,4 @@ mv installer.lua init.lua
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
 
-Now you should able to my config, AWESOME!! ⭐ this repo if you likeed my config.
+AWESOME, now you should able to my config!! ⭐ this repo if you liked my config.
