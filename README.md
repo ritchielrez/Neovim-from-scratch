@@ -10,3 +10,9 @@ git clone https://github.com/ritchielrez/Neovim-from-scratch.git ~/.config/nvim
 ```powershell
 git clone https://github.com/ritchielrez/Neovim-from-scratch.git ~/Appdata/Local/nvim
 ```
+After you got my config downloaded into the right place, go to **~/.config/nvim/lua/plugins**(Linux/OSX), or **~/Appdata/Local/nvim**(Windows) 
+from your shell, I recommend Powershell if you're using Windows. After you go to that folder, run this commands:
+```shell
+mv init.lua init1.lua
+mv installer.lua init.lua
+```
