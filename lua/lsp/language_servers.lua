@@ -13,14 +13,14 @@ else
 end
 
 -- Set the path to the sumneko installation; if you previously installed via the now deprecated :LspInstall, use
-local sumneko_root_path = 'C:/Users/ritch/Documents/GitHub/lua-language-server'
+local sumneko_root_path = '/home/ritux/lua-language-server/bin'
 local sumneko_binary = "lua-language-server"
 
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
-local omnisharp_bin = "C:\\Users\\ritch\\Documents\\Omnisharp\\OmniSharp.exe"
+local omnisharp_bin = "/home/ritux/omnisharp/run"
 
 local langservers = { 'sumneko_lua', 'clangd', 'pyright', 'omnisharp' }
 
@@ -61,7 +61,7 @@ for _, server in ipairs(langservers) do
         }
 
     -- For C# omnisharp lsp
-    elseif server == 'omnisharp' then 
+    elseif server == 'omnisharp' then
         require'lspconfig'[server].setup {
             capabilities = capabilities,
             on_attach = function(_, bufnr)
@@ -75,4 +75,3 @@ for _, server in ipairs(langservers) do
         require'lspconfig'[server].setup {capabilities = capabilities}
     end
 end
-

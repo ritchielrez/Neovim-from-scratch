@@ -7,9 +7,9 @@ return require("packer").startup(function()
 
 	-- My favourite color schemes
 	use({ "LunarVim/onedarker.nvim" })
-	use({ "sainnhe/gruvbox-material", config = vim.cmd([[colorscheme gruvbox-material]]) })
+    use({ "sainnhe/gruvbox-material", config = vim.cmd([[colorscheme gruvbox-material]]) })
 
-	use({ "nvim-treesitter/nvim-treesitter", config = require("treesitter-config") })
+    use({ "nvim-treesitter/nvim-treesitter", config = require("treesitter-config") })
 	use({ "p00f/nvim-ts-rainbow", requires = { "nvim-treesitter/nvim-treesitter" } })
 	use({ "windwp/nvim-autopairs", config = require("npairs-config") })
 	use({ "folke/which-key.nvim", config = require("whichkey-config") })
@@ -26,7 +26,6 @@ return require("packer").startup(function()
 		config = require("nvim-tree-config"),
 	})
 	use({ "neovim/nvim-lspconfig", config = require("lsp") })
-	use({ "" })
 	use({ "hrsh7th/nvim-cmp" })
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-buffer" })

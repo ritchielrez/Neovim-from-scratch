@@ -55,3 +55,23 @@ vim.g.loaded_tarPlugin = 1
 
 -- Setting file formatting correctly so I don't see ^M anymore
 vim.cmd[[set ffs=unix,dos]]
+
+-- Lua global functions used to load up plugin configs without crashing noevim
+function _G.config_error (err)
+    print("Backtrace:", debug.traceback(err))
+end
+
+function _G.load_config (config) 
+    local _, required = xpcall(require, config_error, config)
+    return required
+end
+
+function _G.setup_config (setup_module, config)
+    local setup = load_config(setup_module).setup
+    if type(setup) == 'function' then 
+        return setup(config)
+    else
+        print("No setup function for:", setup_module)
+    end
+end
+
