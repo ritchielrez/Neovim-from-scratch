@@ -19,3 +19,5 @@ mv init.lua init1.lua
 mv installer.lua init.lua
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
+
+Now you should able to my config, AWESOME! :shipit:
