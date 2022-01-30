@@ -29,8 +29,6 @@ vim.opt.mouse = "a"
 -- Don't beep
 vim.opt.belloff = "all"
 
--- Show white spaces
-vim.opt.listchars = "tab:>·,trail:~,extends:>,precedes:<,space:"
 vim.opt.list = true
 
 -- Indentation
