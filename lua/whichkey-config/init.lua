@@ -31,12 +31,12 @@ wk.register(comment_mappings, { mode = "n", prefix = "", preset = true })
 wk.register(comment_mappings, { mode = "v", prefix = "", preset = true })
 
 local lsp_mappings = {
-    gr = {":Lspsaga rename<cr>", "Lsp: Symbol rename"},
-    gx = {":Lspsaga code_action<cr>", "Lsp: Code action"},
-    K = {":Lspsaga hover_doc<cr>", "Lsp: Hover keyword"},
-    go = {":Lspsaga show_line_diagnostics<cr>", "Lsp: Line diagnostic"},
-    gj = {":Lspsaga diagnostic_jump_next<cr>", "Lsp: Jump to next diagnostic"},
-    gk = {":Lspsaga diagnostic_jump_prev<cr>", "Lsp: Jump to previous diagnostic"},
+    rn = {"<cmd>lua vim.lsp.buf.rename()<CR>", "Lsp: Symbol rename"},
+    ca = {"<cmd>lua vim.lsp.buf.code_action()<CR>", "Lsp: Code action"};
+    K = {"<cmd>lua vim.lsp.buf.hover()<CR>", "Lsp: Hover keyword"},
+    go = {"<cmd>lua vim.diagnostic.open_float()<CR>", "Lsp: Line diagnostic"},
+    gj = {"<cmd>lua vim.diagnostic.goto_next()<CR>", "Lsp: Jump to next diagnostic"},
+    gk = {"<cmd>lua vim.diagnostic.goto_prev()<CR>", "Lsp: Jump to previous diagnostic"},
 }
 
 wk.register(lsp_mappings, { mode = "n", prefix = "", preset = true })

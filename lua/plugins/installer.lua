@@ -28,7 +28,7 @@ return require("packer").startup(function()
 	use({ "hrsh7th/vim-vsnip" })
 	use({ "hrsh7th/cmp-vsnip" })
 	use({ "onsails/lspkind-nvim" })
-	use({ "tami5/lspsaga.nvim" })
+	-- use({ "tami5/lspsaga.nvim" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 

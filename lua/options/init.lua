@@ -17,8 +17,8 @@ vim.opt.writebackup = false
 vim.opt.swapfile = false
 
 -- Refresh the buffer faster(?)
-vim.opt.updatetime = 300
-vim.opt.timeoutlen = 100
+-- vim.opt.updatetime = 500
+-- vim.opt.timeoutlen = 200
 
 -- Show me the current files that are opened in different buffers at the top
 vim.opt.showtabline = 2
@@ -39,21 +39,21 @@ vim.opt.autoindent = true
 vim.opt.expandtab = true
 
 -- Loading default plugins for different filetypes
-vim.g.loaded_machparen = 1
-vim.g.loaded_machit = 1
-vim.g.loaded_logiPat = 1
-vim.g.loaded_rrhelper = 1
-vim.g.loaded_tarPlugin = 1
-vim.g.loaded_gzip = 1
-vim.g.loaded_zipPlugin = 1
-vim.g.loaded_2html_plugin = 1
-vim.g.loaded_shada_plugin = 1
-vim.g.loaded_spelfile_plugin = 1
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_machparen = 1
+-- vim.g.loaded_machit = 1
+-- vim.g.loaded_logiPat = 1
+-- vim.g.loaded_rrhelper = 1
+-- vim.g.loaded_tarPlugin = 1
+-- vim.g.loaded_gzip = 1
+-- vim.g.loaded_zipPlugin = 1
+-- vim.g.loaded_2html_plugin = 1
+-- vim.g.loaded_shada_plugin = 1
+-- vim.g.loaded_spelfile_plugin = 1
+vim.g.loaded_netrw = 0
+vim.g.loaded_netrwPlugin = 0
 vim.g.loaded_tutor_mode_plugin = 1
-vim.g.loaded_remote_plugins = 1
-vim.g.loaded_tarPlugin = 1
+vim.g.loaded_remote_plugins = 0
+-- vim.g.loaded_tarPlugin = 1
 
 -- Change the default shell
 -- vim.o.shell = 'pwsh'

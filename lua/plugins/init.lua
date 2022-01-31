@@ -32,7 +32,6 @@ return require("packer").startup(function()
 	use({ "hrsh7th/vim-vsnip" })
 	use({ "hrsh7th/cmp-vsnip" })
 	use({ "onsails/lspkind-nvim" })
-	use({ "tami5/lspsaga.nvim", branch = "nvim6.0" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
 

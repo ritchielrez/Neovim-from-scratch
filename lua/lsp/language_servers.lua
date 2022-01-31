@@ -58,6 +58,10 @@ for _, server in ipairs(langservers) do
         require'lspconfig'[server].setup {
             capabilities = capabilities,
             --cmd = { "clangd", "-target=x86_64-pc-windows-gnu"}
+            flags = {
+                -- This will be the default in neovim 0.7+
+                debounce_text_changes = 150,
+            }
         }
 
     -- For C# omnisharp lsp
@@ -68,10 +72,20 @@ for _, server in ipairs(langservers) do
                 vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
             end,
             cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) },
+            flags = {
+                -- This will be the default in neovim 0.7+
+                debounce_text_changes = 150,
+            }
         }
 
     -- Otherwise if it's some other servers
     else
-        require'lspconfig'[server].setup {capabilities = capabilities}
+        require'lspconfig'[server].setup {
+            capabilities = capabilities,
+            flags = {
+                -- This will be the default in neovim 0.7+
+                debounce_text_changes = 150,
+            }
+        }
     end
 end
