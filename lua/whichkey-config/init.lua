@@ -34,9 +34,20 @@ local lsp_mappings = {
     rn = {"<cmd>lua vim.lsp.buf.rename()<CR>", "Lsp: Symbol rename"},
     ca = {"<cmd>lua vim.lsp.buf.code_action()<CR>", "Lsp: Code action"};
     K = {"<cmd>lua vim.lsp.buf.hover()<CR>", "Lsp: Hover keyword"},
+    gd = {"<cmd>lua vim.lsp.buf.definition()<CR>", "Lsp: Go to Definition"},
     go = {"<cmd>lua vim.diagnostic.open_float()<CR>", "Lsp: Line diagnostic"},
     gj = {"<cmd>lua vim.diagnostic.goto_next()<CR>", "Lsp: Jump to next diagnostic"},
     gk = {"<cmd>lua vim.diagnostic.goto_prev()<CR>", "Lsp: Jump to previous diagnostic"},
 }
 
 wk.register(lsp_mappings, { mode = "n", prefix = "", preset = true })
+
+local quickfix_mappings = {
+    c = {
+        j = {"<cmd>cnext<CR>", "Quickfix: Next in the list"},
+        k = {"<cmd>cprev<CR>", "Quickfix: Previous in the list"},
+        q = {"<cmd>cclose<CR>", "Quickfix: Close the list"},
+    }
+}
+
+wk.register(quickfix_mappings, { mode = "n", prefix = "", preset = true})
