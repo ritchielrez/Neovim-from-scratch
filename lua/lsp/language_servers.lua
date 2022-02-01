@@ -22,7 +22,7 @@ table.insert(runtime_path, "lua/?/init.lua")
 
 local omnisharp_bin = "/home/ritux/omnisharp/run"
 
-local langservers = { 'sumneko_lua', 'clangd', 'pyright', 'omnisharp' }
+local langservers = { 'sumneko_lua', 'clangd', 'pyright', 'omnisharp', 'gopls' }
 
 for _, server in ipairs(langservers) do
 
@@ -40,7 +40,7 @@ for _, server in ipairs(langservers) do
                     },
                     diagnostics = {
                         -- Get the language server to recognize the `vim` global
-                        globals = {'vim'}
+                        globals = {'vim', 'use', 'packer_bootstrap' }
                     },
                     workspace = {
                         -- Make the server aware of Neovim runtime files

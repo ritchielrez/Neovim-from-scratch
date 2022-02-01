@@ -17,7 +17,12 @@ from your shell, I recommend Powershell if you're using Windows. After you go to
 ```shell
 mv init.lua init1.lua
 mv installer.lua init.lua
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+nvim +PackerSync
+```  
+After all the plugins are installed, quit out of neovim, then run:
+```shell
+mv init.lua installer.lua 
+mv init1.lua init.lua
 ```
 
 AWESOME, now you should able to my config!! ⭐ this repo if you liked my config.

@@ -13,7 +13,11 @@ return require("packer").startup(function()
 	use({ "windwp/nvim-autopairs", config = require("npairs-config") })
 	use({ "folke/which-key.nvim", config = require("whichkey-config") })
 	use({ "nvim-telescope/telescope.nvim", config = require("telescope-config") })
-	use({ "hoob3rt/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" }, config = require("lualine-config") })
+	use({
+		"hoob3rt/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons" },
+		config = require("lualine-config"),
+	})
 	use({
 		"akinsho/bufferline.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },
@@ -26,7 +30,7 @@ return require("packer").startup(function()
 	})
 	use({ "neovim/nvim-lspconfig", config = require("lsp") })
 	use({ "hrsh7th/nvim-cmp" })
-	use({ "hrsh7th/cmp-nvim-lsp" })
+	use({ "hrsh7th/cmp-nvim-lsp", requires = { "neovim/nvim-lspconfig" } })
 	use({ "hrsh7th/cmp-buffer" })
 	use({ "hrsh7th/vim-vsnip" })
 	use({ "hrsh7th/cmp-vsnip" })
@@ -43,10 +47,8 @@ return require("packer").startup(function()
 	-- use { 'akinsho/toggleterm.nvim', config = require('toggleterm-config') }
 	use({ "voldikss/vim-floaterm", config = require("floaterm-config") })
 
-	-- Use dependency and run lua function after load
 	use({
 		"lewis6991/gitsigns.nvim",
-		requires = { "nvim-lua/plenary.nvim" },
 		config = function()
 			require("gitsigns").setup({})
 		end,
