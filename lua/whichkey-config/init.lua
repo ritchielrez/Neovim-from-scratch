@@ -13,6 +13,7 @@ local leader_mappings = {
 		r = { ":Telescope live_grep<cr>", "Live grep" },
 		b = { ":Telescope buffers<cr>", "Buffers" },
 		o = { ":Telescope oldfiles<cr>", "Recent files" },
+		gd = { ":Telescope lsp_definitions<cr>", "Lsp: Find definitions" },
 	},
 }
 
@@ -43,7 +44,7 @@ wk.register(lsp_mappings, { mode = "n", prefix = "", preset = true })
 
 local quickfix_mappings = {
 	c = {
-        name = "Quickfix",
+		name = "Quickfix",
 		j = { "<cmd>cnext<CR>", "Next in the list" },
 		k = { "<cmd>cprev<CR>", "Previous in the list" },
 		c = { "<cmd>cclose<CR>", "Close the list" },
