@@ -1,5 +1,4 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 return require("packer").startup(function()
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
@@ -7,9 +6,9 @@ return require("packer").startup(function()
 
 	-- My favourite color schemes
 	use({ "LunarVim/onedarker.nvim" })
-    use({ "sainnhe/gruvbox-material", config = vim.cmd([[colorscheme gruvbox-material]]) })
+	use({ "sainnhe/gruvbox-material", config = vim.cmd([[colorscheme gruvbox-material]]) })
 
-    use({ "nvim-treesitter/nvim-treesitter", config = require("treesitter-config") })
+	use({ "nvim-treesitter/nvim-treesitter", config = require("treesitter-config") })
 	use({ "p00f/nvim-ts-rainbow", requires = { "nvim-treesitter/nvim-treesitter" } })
 	use({ "windwp/nvim-autopairs", config = require("npairs-config") })
 	use({ "folke/which-key.nvim", config = require("whichkey-config") })
@@ -34,6 +33,7 @@ return require("packer").startup(function()
 	use({ "onsails/lspkind-nvim" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
+	use({ "editorconfig/editorconfig-vim" })
 
 	use({ "norcalli/nvim-colorizer.lua", config = require("colorizer").setup() })
 	use({ "glepnir/dashboard-nvim", config = require("dashboard-config") })

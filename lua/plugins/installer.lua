@@ -1,5 +1,4 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 return require("packer").startup(function()
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
@@ -31,6 +30,7 @@ return require("packer").startup(function()
 	-- use({ "tami5/lspsaga.nvim" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim" })
+	use({ "editorconfig/editorconfig-vim" })
 
 	use({ "norcalli/nvim-colorizer.lua" })
 	use({ "glepnir/dashboard-nvim" })
