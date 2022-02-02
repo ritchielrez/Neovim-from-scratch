@@ -1,4 +1,4 @@
-local wk = require("which-key")
+local wk = require("which-key") 
 local leader_mappings = {
 	q = { ":q!<cr>", "Quit" },
 	Q = { ":wq!<cr>", "Save and Quit" },
@@ -13,7 +13,6 @@ local leader_mappings = {
 		r = { ":Telescope live_grep<cr>", "Live grep" },
 		b = { ":Telescope buffers<cr>", "Buffers" },
 		o = { ":Telescope oldfiles<cr>", "Recent files" },
-		gd = { ":Telescope lsp_definitions<cr>", "Lsp: Find definitions" },
 	},
 }
 
@@ -48,7 +47,8 @@ local quickfix_mappings = {
 		j = { "<cmd>cnext<CR>", "Next in the list" },
 		k = { "<cmd>cprev<CR>", "Previous in the list" },
 		c = { "<cmd>cclose<CR>", "Close the list" },
+		o = { "<cmd>copen<CR>", "Open the list" },
 	},
 }
 
-wk.register(quickfix_mappings, { mode = "n", prefix = "<leader>" })
+wk.register(quickfix_mappings, opts)
