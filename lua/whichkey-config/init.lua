@@ -1,4 +1,4 @@
-local wk = require("which-key") 
+local wk = require("which-key")
 local leader_mappings = {
 	q = { ":q!<cr>", "Quit" },
 	Q = { ":wq!<cr>", "Save and Quit" },
@@ -30,10 +30,13 @@ wk.register(comment_mappings, { mode = "n", prefix = "", preset = true })
 wk.register(comment_mappings, { mode = "v", prefix = "", preset = true })
 
 local lsp_mappings = {
+	-- rn = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Lsp: Symbol rename" },
 	rn = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Lsp: Symbol rename" },
-	ca = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Lsp: Code action" },
+	-- ca = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Lsp: Code action" },
+	ca = { "<cmd>Telescope lsp_code_actions<CR>", "Lsp: Code action" },
 	K = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Lsp: Hover keyword" },
-	gd = { "<cmd>lua vim.lsp.buf.definition()<CR>", "Lsp: Go to Definition" },
+	-- gd = { "<cmd>lua vim.lsp.buf.definition()<CR>", "Lsp: Go to Definition" },
+	gd = { "<cmd>Telescope lsp_definitions<CR>", "Lsp: Go to Definition" },
 	go = { "<cmd>lua vim.diagnostic.open_float()<CR>", "Lsp: Line diagnostic" },
 	gj = { "<cmd>lua vim.diagnostic.goto_next()<CR>", "Lsp: Jump to next diagnostic" },
 	gk = { "<cmd>lua vim.diagnostic.goto_prev()<CR>", "Lsp: Jump to previous diagnostic" },
