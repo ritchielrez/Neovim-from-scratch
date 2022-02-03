@@ -31,7 +31,7 @@ wk.register(comment_mappings, { mode = "v", prefix = "", preset = true })
 
 local lsp_mappings = {
 	-- rn = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Lsp: Symbol rename" },
-	rn = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Lsp: Symbol rename" },
+	rn = { '<cmd>lua require("renamer").rename()<CR>', "Lsp: Symbol rename" },
 	-- ca = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Lsp: Code action" },
 	ca = { "<cmd>Telescope lsp_code_actions<CR>", "Lsp: Code action" },
 	K = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Lsp: Hover keyword" },
