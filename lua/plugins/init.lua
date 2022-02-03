@@ -37,11 +37,6 @@ return require("packer").startup(function()
 	use({ "onsails/lspkind-nvim" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
-	use({
-		"filipdutescu/renamer.nvim",
-		branch = "master",
-        config = require("renamer").setup(),
-	})
 	use({ "editorconfig/editorconfig-vim" })
 
 	use({ "norcalli/nvim-colorizer.lua", config = require("colorizer").setup() })
