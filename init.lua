@@ -19,3 +19,4 @@ hi EndOfBuffer guibg=none ctermbg=none
 
 vim.cmd([[ command! Fmt execute 'lua vim.lsp.buf.formatting_sync()' ]])
 
+

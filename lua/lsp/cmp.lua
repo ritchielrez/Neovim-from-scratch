@@ -15,8 +15,8 @@ if not status_ok then
   return
 end
 
-local status_ok, lspkind = pcall(require, "lspkind")
-if not status_ok then
+local kind_ok, lspkind = pcall(require, "lspkind")
+if not kind_ok then
   return
 end
 
@@ -77,4 +77,3 @@ cmp.setup({
     format = lspkind.cmp_format({with_text = true, maxwidth = 50})
   }
 })
-
