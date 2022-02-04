@@ -1,12 +1,27 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-return require("packer").startup(function()
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+
+-- Have packer use a popup window
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
+
+return packer.startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
 
 	-- My favourite color schemes
 	use({ "LunarVim/onedarker.nvim" })
-	use({ "sainnhe/gruvbox-material", config = vim.cmd([[colorscheme gruvbox-material]]) })
+	use({ "sainnhe/gruvbox-material" })
 
 	use({ "nvim-treesitter/nvim-treesitter", config = require("treesitter-config") })
 	use({ "p00f/nvim-ts-rainbow", requires = { "nvim-treesitter/nvim-treesitter" } })
@@ -39,7 +54,7 @@ return require("packer").startup(function()
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
 	use({ "editorconfig/editorconfig-vim" })
 
-	use({ "norcalli/nvim-colorizer.lua", config = require("colorizer").setup() })
+	use({ "norcalli/nvim-colorizer.lua", config = require("colorizer-config") })
 	use({ "glepnir/dashboard-nvim", config = require("dashboard-config") })
 	use({ "lukas-reineke/indent-blankline.nvim", config = require("blankline-config") })
 	use({ "lukas-reineke/format.nvim", config = require("format-config") })

@@ -3,6 +3,8 @@ require("plugins")
 require("keymaps")
 require("autocommands")
 
+vim.cmd [[colorscheme gruvbox-material]]
+
 -- This enables full transparency for neovim
 vim.cmd([[
 hi Normal guibg=none ctermbg=none

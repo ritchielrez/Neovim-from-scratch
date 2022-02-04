@@ -1,5 +1,8 @@
 -- Setup lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local status_ok, capabilities = pcall(require, 'cmp_nvim_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())')
+if not status_ok then
+  return
+end
 
 local system_name
 if vim.fn.has("mac") == 1 then

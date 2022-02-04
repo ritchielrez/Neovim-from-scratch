@@ -1,4 +1,9 @@
-require'format'.setup {
+local status_ok, format = pcall(require, "format")
+if not status_ok then
+  return
+end
+
+format.setup {
     lua = {
         {
             cmd = {
