@@ -6,6 +6,7 @@ If you want to use my config, you first need to install [packer.nvim](https://gi
 ```shell
 mv ~/.config/nvim ~/.config/nvim.bak
 git clone https://github.com/ritchielrez/Neovim-from-scratch.git ~/.config/nvim 
+nvim +PackerSync
 ```
 **For Windows, run this in Powershell**
 ```powershell
