@@ -19,14 +19,14 @@ else
 end
 
 -- Set the path to the sumneko installation; if you previously installed via the now deprecated :LspInstall, use
-local sumneko_root_path = "/home/ritux/lua-language-server/bin"
+local sumneko_root_path = "C:/Users/ritux/Documents//GitHub/lua-language-server"
 local sumneko_binary = "lua-language-server"
 
 local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
-local omnisharp_bin = "/home/ritux/omnisharp/run"
+local omnisharp_bin = "C:/Users/ritux/Documents/GitHub/Omnisharp/Omnisharp.exe"
 
 local langservers = { "sumneko_lua", "clangd", "pyright", "omnisharp", "gopls" }
 
