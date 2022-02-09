@@ -2,17 +2,17 @@
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
-  return
+	return
 end
 
 -- Have packer use a popup window
-packer.init {
-  display = {
-    open_fn = function()
-      return require("packer.util").float { border = "rounded" }
-    end,
-  },
-}
+packer.init({
+	display = {
+		open_fn = function()
+			return require("packer.util").float({ border = "rounded" })
+		end,
+	},
+})
 
 return packer.startup(function(use)
 	-- Packer can manage itself
@@ -47,8 +47,12 @@ return packer.startup(function(use)
 	use({ "hrsh7th/nvim-cmp" })
 	use({ "hrsh7th/cmp-nvim-lsp", requires = { "neovim/nvim-lspconfig" } })
 	use({ "hrsh7th/cmp-buffer" })
-	use({ "hrsh7th/vim-vsnip" })
-	use({ "hrsh7th/cmp-vsnip" })
+	use({ "hrsh7th/cmp-path" })
+	use({ "L3MON4D3/LuaSnip" })
+	use({ "saadparwaiz1/cmp_luasnip", config = require("snips") })
+    use({ "rafamadriz/friendly-snippets" })
+	-- use({ "hrsh7th/vim-vsnip" })
+	-- use({ "hrsh7th/cmp-vsnip" })
 	use({ "onsails/lspkind-nvim" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
