@@ -99,6 +99,41 @@ local function lsp()
 	return errors .. warnings .. hints .. info .. "%#Normal#"
 end
 
+local function lineinfo()
+  if vim.bo.filetype == "alpha" then
+    return ""
+  end
+  return "%#WildMenu# %P %l:%c "
+end
+
+local vcs = function()
+  local git_info = vim.b.gitsigns_status_dict
+  if not git_info or git_info.head == "" then
+    return ""
+  end
+  local added = git_info.added and ("%#DiagnosticFloatingHint#  " .. git_info.added ) or ""
+  local changed = git_info.changed and ("%#DiagnosticFloatingInfo# ~ " .. git_info.changed ) or ""
+  local removed = git_info.removed and ("%#DiagnosticFloatingError#  " .. git_info.removed ) or ""
+  if git_info.added == 0 then
+    added = ""
+  end
+  if git_info.changed == 0 then
+    changed = ""
+  end
+  if git_info.removed == 0 then
+    removed = ""
+  end
+  return table.concat {
+     " ",
+     "%#Search#  ",
+     git_info.head,
+     added,
+     changed,
+     removed,
+     " %#Normal#",
+  }
+end
+
 Statusline = {}
 
 Statusline.active = function()
@@ -111,7 +146,9 @@ Statusline.active = function()
 		filename(),
 		"%#Normal#",
 		lsp(),
+        vcs(),
 		"%=%#StatusLineExtra#",
+        lineinfo(),
 	})
 end
 
@@ -129,6 +166,5 @@ au!
 au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline.active()
 au WinLeave,BufLeave * setlocal statusline=%!v:lua.Statusline.inactive()
 au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.Statusline.short()
-augroup END
+augroup EN
 ]], false)
-
