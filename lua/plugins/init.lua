@@ -28,11 +28,11 @@ return packer.startup(function(use)
 	use({ "windwp/nvim-autopairs", config = require("npairs-config") })
 	use({ "folke/which-key.nvim", config = require("whichkey-config") })
 	use({ "nvim-telescope/telescope.nvim", config = require("telescope-config") })
-	use({
-		"hoob3rt/lualine.nvim",
-		requires = { "kyazdani42/nvim-web-devicons" },
-		config = require("lualine-config"),
-	})
+	-- use({
+	-- 	"hoob3rt/lualine.nvim",
+	-- 	requires = { "kyazdani42/nvim-web-devicons" },
+	-- 	config = require("lualine-config"),
+	-- })
 	use({
 		"akinsho/bufferline.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },

@@ -2,8 +2,9 @@ require("options")
 require("plugins")
 require("keymaps")
 require("autocommands")
+require("statusline")
 
-vim.cmd [[colorscheme gruvbox-material]]
+vim.cmd([[colorscheme gruvbox-material]])
 
 -- This enables full transparency for neovim
 vim.cmd([[
@@ -18,5 +19,3 @@ hi EndOfBuffer guibg=none ctermbg=none
 ]])
 
 vim.cmd([[ command! Fmt execute 'lua vim.lsp.buf.formatting_sync()' ]])
-
-
