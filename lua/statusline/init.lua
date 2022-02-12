@@ -111,7 +111,7 @@ local vcs = function()
 	if not git_info or git_info.head == "" then
 	  return ""
 	end
-	local head = git_info.head and ("%#Search#  " .. git_info.head .. " ") or ""
+	local head = git_info.head and ("%#Search#  " .. git_info.head) or " "
 	local added = git_info.added and ("%#DiagnosticFloatingHint#  " .. git_info.added) or ""
 	local changed = git_info.changed and ("%#DiagnosticFloatingInfo#  " .. git_info.changed) or ""
 	local removed = git_info.removed and ("%#DiagnosticFloatingError#  " .. git_info.removed) or ""
