@@ -2,7 +2,6 @@ require("options")
 require("plugins")
 require("keymaps")
 require("autocommands")
-require("statusline")
 
 vim.cmd([[colorscheme gruvbox-material]])
 

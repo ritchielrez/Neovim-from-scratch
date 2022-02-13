@@ -33,6 +33,11 @@ return packer.startup(function(use)
 	-- 	requires = { "kyazdani42/nvim-web-devicons" },
 	-- 	config = require("lualine-config"),
 	-- })
+    use({
+        "feline-nvim/feline.nvim",
+        requires = { "kyazdani42/nvim-web-devicons" },
+        config = require("feline-config")
+    })
 	use({
 		"akinsho/bufferline.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },
@@ -57,11 +62,11 @@ return packer.startup(function(use)
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
 	use({ "editorconfig/editorconfig-vim" })
+    use({ "SmiteshP/nvim-gps" })
 
 	use({ "norcalli/nvim-colorizer.lua", config = require("colorizer-config") })
 	use({ "glepnir/dashboard-nvim", config = require("dashboard-config") })
 	use({ "lukas-reineke/indent-blankline.nvim", config = require("blankline-config") })
-	use({ "lukas-reineke/format.nvim", config = require("format-config") })
 	use({ "terrortylor/nvim-comment", config = require("comment-config") })
 	-- use { 'akinsho/toggleterm.nvim', config = require('toggleterm-config') }
 	use({ "voldikss/vim-floaterm", config = require("floaterm-config") })
