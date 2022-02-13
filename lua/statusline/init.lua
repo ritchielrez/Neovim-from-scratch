@@ -1,6 +1,5 @@
 local fn = vim.fn
 local api = vim.api
-local M = {}
 
 local modes = {
 	["n"] = "NORMAL",
@@ -111,9 +110,9 @@ local vcs = function()
 	if not git_info or git_info.head == "" then
 		return ""
 	end
-	local added = git_info.added and ("%#Macro# +" .. git_info.added) or ""
-	local changed = git_info.changed and ("%#Identifier# ~" .. git_info.changed) or ""
-	local removed = git_info.removed and ("%#Error# -" .. git_info.removed) or ""
+	local added = git_info.added and ("%#Macro#  " .. git_info.added) or ""
+	local changed = git_info.changed and ("%#Identifier#  " .. git_info.changed) or ""
+	local removed = git_info.removed and ("%#Error#  " .. git_info.removed) or ""
 	if git_info.added == 0 then
 		added = ""
 	end
@@ -157,7 +156,7 @@ function Statusline.inactive()
 end
 
 function Statusline.short()
-	return "%#Normal#   NVIMTREE"
+	return "%#Normal# NvimTree "
 end
 
 api.nvim_exec(
