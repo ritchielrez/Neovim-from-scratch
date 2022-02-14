@@ -15,6 +15,11 @@ hi SpecialKey guibg=none ctermbg=none
 hi VertSplit guibg=none ctermbg=none
 hi SignColumn guibg=none ctermbg=none
 hi EndOfBuffer guibg=none ctermbg=none
+
+hi LspDiagnosticsVirtualTextError guifg=red gui=bold,italic,underline
+hi LspDiagnosticsVirtualTextWarning guifg=orange gui=bold,italic,underline
+hi LspDiagnosticsVirtualTextInformation guifg=yellow gui=bold,italic,underline
+hi LspDiagnosticsVirtualTextHint guifg=green gui=bold,italic,underline
 ]])
 
 vim.cmd([[ command! Fmt execute 'lua vim.lsp.buf.formatting_sync()' ]])

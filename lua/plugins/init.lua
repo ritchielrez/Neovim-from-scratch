@@ -16,7 +16,7 @@ packer.init({
 
 return packer.startup(function(use)
 	-- Packer can manage itself
-	use("wbthomason/packer.nvim")
+    use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
 
 	-- My favourite color schemes
@@ -33,11 +33,6 @@ return packer.startup(function(use)
 	-- 	requires = { "kyazdani42/nvim-web-devicons" },
 	-- 	config = require("lualine-config"),
 	-- })
-    use({
-        "feline-nvim/feline.nvim",
-        requires = { "kyazdani42/nvim-web-devicons" },
-        config = require("feline-config")
-    })
 	use({
 		"akinsho/bufferline.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },
@@ -55,14 +50,14 @@ return packer.startup(function(use)
 	use({ "hrsh7th/cmp-path" })
 	use({ "L3MON4D3/LuaSnip" })
 	use({ "saadparwaiz1/cmp_luasnip", config = require("snips") })
-    use({ "rafamadriz/friendly-snippets" })
+	use({ "rafamadriz/friendly-snippets" })
 	-- use({ "hrsh7th/vim-vsnip" })
 	-- use({ "hrsh7th/cmp-vsnip" })
 	use({ "onsails/lspkind-nvim" })
 	-- use { 'jose-elias-alvarez/null-ls.nvim' }
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "neovim/nvim-lspconfig" } })
 	use({ "editorconfig/editorconfig-vim" })
-    use({ "SmiteshP/nvim-gps" })
+	use({ "SmiteshP/nvim-gps" })
 
 	use({ "norcalli/nvim-colorizer.lua", config = require("colorizer-config") })
 	use({ "glepnir/dashboard-nvim", config = require("dashboard-config") })

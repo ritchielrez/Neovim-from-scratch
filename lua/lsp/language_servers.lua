@@ -58,7 +58,7 @@ for _, server in ipairs(langservers) do
 			},
 		})
 
-		-- Else if it's clangd which is loading up
+		-- For C++ clangd lsp
 	elseif server == "clangd" then
 		require("lspconfig")[server].setup({
 			capabilities = capabilities,
@@ -73,9 +73,9 @@ for _, server in ipairs(langservers) do
 	elseif server == "omnisharp" then
 		require("lspconfig")[server].setup({
 			capabilities = capabilities,
-			on_attach = function(_, bufnr)
-				vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-			end,
+			-- on_attach = function(_, bufnr)
+			-- 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+			-- end,
 			cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
 			flags = {
 				-- This will be the default in neovim 0.7+
