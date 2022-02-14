@@ -38,6 +38,8 @@ vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.expandtab = true
 
+vim.opt.shellslash = false
+
 -- Loading default plugins for different filetypes
 -- vim.g.loaded_machparen = 1
 -- vim.g.loaded_machit = 1
@@ -49,8 +51,8 @@ vim.opt.expandtab = true
 -- vim.g.loaded_2html_plugin = 1
 -- vim.g.loaded_shada_plugin = 1
 -- vim.g.loaded_spelfile_plugin = 1
-vim.g.loaded_netrw = 0
-vim.g.loaded_netrwPlugin = 0
+-- vim.g.loaded_netrw = 0
+-- vim.g.loaded_netrwPlugin = 0
 vim.g.loaded_tutor_mode_plugin = 1
 vim.g.loaded_remote_plugins = 0
 -- vim.g.loaded_tarPlugin = 1
@@ -60,3 +62,4 @@ vim.g.loaded_remote_plugins = 0
 
 -- Setting file formatting correctly so I don't see ^M anymore
 vim.cmd([[set ffs=unix,dos]])
+
