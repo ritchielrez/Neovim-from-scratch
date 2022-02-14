@@ -1,0 +1,102 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.042  000.042: --- NVIM STARTING ---
+027.413  027.371: locale set
+028.968  001.555: inits 1
+029.224  000.256: window checked
+039.237  010.013: parsing arguments
+039.867  000.630: expanding arguments
+040.030  000.163: inits 2
+046.391  006.361: init highlight
+046.410  000.019: waiting for UI
+051.601  005.192: done waiting for UI
+051.644  000.043: init screen for UI
+051.722  000.078: init default mappings
+052.856  001.134: init default autocommands
+068.305  000.319  000.319: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\ftplugin.vim
+070.254  000.251  000.251: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\indent.vim
+070.599  017.173: sourcing vimrc file(s)
+074.176  000.328  000.328: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\filetype.lua
+103.363  000.193  000.193: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\ftdetect\snippets.vim
+107.822  000.178  000.178: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\fusion.vim
+108.231  000.143  000.143: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\gdresource.vim
+108.596  000.120  000.120: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\gdscript.vim
+108.963  000.127  000.127: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\glimmer.vim
+109.324  000.120  000.120: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\glsl.vim
+109.705  000.143  000.143: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\gowork.vim
+110.139  000.188  000.188: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\graphql.vim
+110.555  000.160  000.160: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\hack.vim
+110.970  000.172  000.172: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\hcl.vim
+111.346  000.138  000.138: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\heex.vim
+111.731  000.147  000.147: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\hjson.vim
+112.124  000.148  000.148: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\json5.vim
+112.645  000.219  000.219: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\ledger.vim
+113.075  000.157  000.157: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\nix.vim
+113.475  000.155  000.155: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\prisma.vim
+113.886  000.168  000.168: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\pug.vim
+114.306  000.170  000.170: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\ql.vim
+114.746  000.198  000.198: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\query.vim
+115.157  000.164  000.164: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\surface.vim
+115.572  000.170  000.170: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\teal.vim
+115.984  000.173  000.173: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\tlaplus.vim
+116.423  000.202  000.202: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\ftdetect\yang.vim
+119.860  045.056  041.303: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\filetype.vim
+124.072  000.493  000.493: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\syntax\synload.vim
+124.559  003.628  003.135: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\syntax\syntax.vim
+141.818  001.228  001.228: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\gzip.vim
+142.372  000.224  000.224: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\health.vim
+143.180  000.408  000.408: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\man.vim
+148.028  001.218  001.218: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim
+148.988  005.493  004.276: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\matchit.vim
+150.709  001.418  001.418: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\matchparen.vim
+153.172  002.003  002.003: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\netrwPlugin.vim
+155.182  001.508  001.508: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\rplugin.vim
+156.112  000.544  000.544: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\shada.vim
+156.736  000.232  000.232: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\spellfile.vim
+157.727  000.641  000.641: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\tarPlugin.vim
+158.603  000.505  000.505: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\tohtml.vim
+159.158  000.213  000.213: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\tutor.vim
+160.118  000.630  000.630: sourcing C:\Users\ritux\scoop\apps\neovim-nightly\current\share\nvim\runtime\plugin\zipPlugin.vim
+163.606  002.564  002.564: sourcing C:\Users\ritux\AppData\Local\nvim\plugin\packer_compiled.lua
+168.575  031.353: loading rtp plugins
+177.334  001.113  001.113: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\dashboard-nvim\plugin\dashboard.vim
+179.671  001.148  001.148: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\editorconfig-vim\plugin\editorconfig.vim
+204.470  022.209  022.209: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\indent-blankline.nvim\plugin\indent_blankline.vim
+236.415  028.321  028.321: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\LuaSnip\plugin\luasnip.vim
+256.783  017.908  017.908: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-cmp\plugin\cmp.lua
+258.352  000.430  000.430: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-colorizer.lua\plugin\colorizer.vim
+280.470  020.568  020.568: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-gps\plugin\nvim-gps.vim
+330.508  048.673  048.673: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-lspconfig\plugin\lspconfig.vim
+332.808  000.519  000.519: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-tree.lua\plugin\nvim-tree-startup.lua
+336.113  002.390  002.390: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-treesitter\plugin\nvim-treesitter.vim
+339.888  002.555  002.555: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-ts-rainbow\plugin\rainbow.vim
+341.578  000.314  000.314: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\nvim-web-devicons\plugin\nvim-web-devicons.vim
+343.884  000.412  000.412: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\plenary.nvim\plugin\plenary.vim
+345.820  000.780  000.780: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\telescope.nvim\plugin\telescope.vim
+348.128  001.144  001.144: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\vim-floaterm\plugin\floaterm.vim
+349.646  000.241  000.241: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\which-key.nvim\plugin\which-key.vim
+350.643  033.344: loading packages
+387.481  034.670  034.670: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\cmp-buffer\after\plugin\cmp_buffer.lua
+391.170  002.248  002.248: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\cmp-nvim-lsp\after\plugin\cmp_nvim_lsp.lua
+393.373  001.321  001.321: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\cmp-path\after\plugin\cmp_path.lua
+395.380  001.161  001.161: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\cmp_luasnip\after\plugin\cmp_luasnip.lua
+395.489  005.446: loading after plugins
+395.588  000.099: inits 3
+403.717  008.129: reading ShaDa
+404.667  000.950: opening buffers
+404.846  000.179: BufEnter autocommands
+404.858  000.012: editing files in windows
+406.983  000.628  000.628: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\dashboard-nvim\autoload\dashboard.vim
+428.654  000.261  000.261: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\dashboard-nvim\autoload\dashboard\utils.vim
+442.243  000.535  000.535: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\dashboard-nvim\autoload\dashboard\header.vim
+444.402  000.812  000.812: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\dashboard-nvim\autoload\dashboard\section.vim
+464.279  000.515  000.515: sourcing C:\Users\ritux\AppData\Local\nvim-data\site\pack\packer\start\dashboard-nvim\syntax\dashboard.vim
+472.106  064.496: VimEnter autocommands
+472.128  000.023: UIEnter autocommands
+472.135  000.007: before starting main loop
+481.131  008.995: first screen update
+481.154  000.023: --- NVIM STARTED ---
