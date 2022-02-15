@@ -1,6 +1,6 @@
 # Neovim-from-scratch
 
-## WARNING! this config is no longer maintained, expect outdated config, or slow performance
+## ⚠️WARNING! this config is no longer maintained, expect outdated config, or slow performance
 
 This is my new neovim config, made from scratch with pure lua. This is not a stable config. **WIP!!**
 If you want to use my config, you first need to install [packer.nvim](https://github.com/wbthomason/packer.nvim), then run this commands:  
